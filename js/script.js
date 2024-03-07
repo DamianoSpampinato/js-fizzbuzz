@@ -1,8 +1,9 @@
 
-let fuzzOrPuzz;
 
 // Stampare in console i numeri da 1 a 100
 for (let i= 1; i <= 100; i++){
+    let fuzzOrPuzz = i;
+    
     //fare in modo che i multipli di 3 e 5 stampino FizzBuzz
     if (i % 3 === 0 & i % 5 ===0) {
         fuzzOrPuzz = 'FuzzPuzz';
@@ -23,4 +24,9 @@ for (let i= 1; i <= 100; i++){
     console.log(i);
 
     }
+    const box = document.createElement('div');
+    box.innerHTML = fuzzOrPuzz;
+    const container = document.querySelector('#container');
+    container.append(box);
+    
 }
